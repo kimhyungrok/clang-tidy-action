@@ -1,0 +1,15 @@
+name: 'clang-tidy-action'
+description: 'execute static analysis on repository using by clang-tidy'
+branding:
+  icon: check-square
+  color: orange
+inputs:
+  exclude:
+    description: 'keyword for excluding check'
+    required: false
+    default: ''
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.exclude }}
