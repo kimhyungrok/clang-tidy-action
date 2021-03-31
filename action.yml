@@ -8,8 +8,13 @@ inputs:
     description: 'keyword for excluding check'
     required: false
     default: ''
+  pre-command:
+    description: 'pre-command which is executed before running clang-tidy'
+    required: false
+    default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.exclude }}
+    - ${{ inputs.pre-command }}
