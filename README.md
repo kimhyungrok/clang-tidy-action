@@ -30,7 +30,7 @@ jobs:
     - name: checkout repo
       uses: actions/checkout@v2
     - name: run clang-tidy-action
-      uses: kimhyungrok/clang-tidy-action@v1
+      uses: kimhyungrok/clang-tidy-action@v1.1
       with:
         exclude: "externals"
         pre-command: "echo hello"
