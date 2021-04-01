@@ -8,6 +8,10 @@ This action is for executing static analysis on your repository using by clang-t
 
 **Optional** keyword for excluding check
 
+### `pre-command`
+
+**Optional** pre-command which is executed before running clang-tidy
+
 ## Example usage
 
 ```
@@ -28,5 +32,6 @@ jobs:
     - name: run clang-tidy-action
       uses: kimhyungrok/clang-tidy-action@v1
       with:
-        exclude: 'externals'
+        exclude: "externals"
+        pre-command: "echo hello"
 ```
