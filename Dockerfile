@@ -1,6 +1,6 @@
-FROM nugulinux/devenv:focal
+FROM nugulinux/devenv:jammy
 
-LABEL version="1.2.0"
+LABEL version="1.2.1"
 LABEL "com.github.actions.name"="clang-tidy-action"
 LABEL "com.github.actions.description"="execute static analysis on repository using by clang-tidy"
 LABEL "com.github.actions.icon"="check-square"
