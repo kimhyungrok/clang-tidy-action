@@ -15,4 +15,4 @@ if [ ! -z "$PRE_COMMAND" ]; then
 fi    
 
 # execute clang-tidy
-source /run_clang_tidy.sh $EXCLUDE
+source /run_clang_tidy.sh '$EXCLUDE'
